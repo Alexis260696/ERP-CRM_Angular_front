@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module'; // Asegúrate de que este archivo existe
-import { AppComponent } from './app.component'; // NO lo declares en NgModule
-import { DashboardComponent } from './components/dashboard/dashboard.component'; // NO lo declares en NgModule
-import { routing } from './app.routing'
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
-    routing
+    FormsModule,
+    HttpClientModule
   ],
   providers: []
 })

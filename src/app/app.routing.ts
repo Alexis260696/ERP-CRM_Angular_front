@@ -4,7 +4,8 @@ import path from 'path';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 export const appRoutes: Routes = [
-  {path: 'dashboard', component: DashboardComponent}
+  {path: 'dashboard', component: DashboardComponent},
+  {path: '', component: DashboardComponent}
 ];
 
 export const appRoutingProviders : any[] = [];
